@@ -1,0 +1,295 @@
+@import "libs/slick";
+
+header{
+
+    background-color: #35264e;
+}
+
+.stocks{
+    padding: 10px 0 40px;
+    .title{
+        text-align: center;
+        margin-bottom: 20px;
+        h2{
+            font-size: 30px;
+            color: #282828;
+            font-weight: 400;
+            line-height: 34px;
+            font-family: 'Conv_MARTA_ITALIC';
+        }
+    }
+    .stocks-content{
+        .stocks-item{
+            margin-bottom: 20px;
+            position: relative;
+            .stocks-img{
+                z-index: 1;
+                overflow: hidden;
+                position: relative;
+                border-radius: 8px;
+                padding: 30px 20px;
+                &::after{
+                    content: '';
+                    top: 0;
+                    left: 0;
+                    z-index: 0;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    background-color: #ffffff;
+                    background-image: linear-gradient(to top, #493755 0%, #34283f 100%);
+                    opacity: 0.4;
+                }
+                img{
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+                .img-text{
+                    z-index: 1;
+                    opacity: 1;
+                    position: relative;
+                    text-align: center;
+                    transition: all 0.5s;
+                    h3{
+                        color: #ffffff;
+                        font-size: 40px;
+                        font-weight: 400;
+                        line-height: 46px;
+                        margin-bottom: 10px;
+                        font-family: 'Conv_MARTA_ITALIC';
+                    }
+                    p{
+                        font-size: 18px;
+                        color: #ffffff;
+                        line-height: 24px;
+                        margin-bottom: 10px;
+                    }
+                    a{
+                        font-size: 16px;
+                        color: #ffffff;
+                        line-height: 20px;
+                        display: inline-block;
+                        text-decoration: underline;
+                        transition: all 0.5s;
+                        &:hover{
+                            color: #d0b606;
+                        }
+                    }
+                }
+            }
+            .stocks-text{
+                display: none;
+                overflow: hidden;
+                .text{
+                    padding: 20px;
+                    p{
+                        font-size: 14px;
+                        color: #282828;
+                        line-height: 22px;
+                        padding-bottom: 20px;
+                    }
+                    a{
+                        display: table;
+                        margin: 0 auto;
+                        font-size: 16px;
+                        color: #ffffff;
+                        line-height: 22px;
+                        padding: 10px 25px;
+                        text-align: center;
+                        border-radius: 3px;
+                        background-image: linear-gradient(to left, #604c7c 0%, #302148 100%);
+                        transition: all 0.5s;
+                        &:hover{
+                            background-image: linear-gradient(to left, #d0b606 0%, #d0b606 100%);
+                        }
+                    }
+                }
+            }
+        }
+        .stocks-item.no-active{
+            position: relative;
+            &::after{
+                opacity: 0;
+            }
+            span{
+                top: 0;
+                left: 0;
+                z-index: 2;
+                width: 100%;
+                height: 100%;
+                opacity: 0.5;
+                position: absolute;
+                background: #282828
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .stocks {
+        .stocks-content {
+            .stocks-item {
+                margin-bottom: 30px;
+                .stocks-img {
+                    position: relative;
+                    padding: 45px 35px;
+                    img {
+                        top: 50%;
+                        left: 30px;
+                        width: 180px;
+                        position: absolute;
+                        transform: translate(0, -50%);
+                    }
+                    .img-text {
+                        margin-left: 33%;
+                        text-align: right;
+                        h3 {
+                            font-size: 46px;
+                            line-height: 52px;
+                        }
+                    }
+                }
+                .stocks-text {
+                    .text {
+                        padding: 35px 30px 20px;
+                        p {
+                            font-size: 16px;
+                            line-height: 22px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .stocks {
+        .stocks-content {
+            .stocks-item {
+                .stocks-img {
+                    padding: 60px 70px;
+                    img {
+                        left: 20px;
+                        width: 270px;
+                    }
+                    .img-text {
+                        h3 {
+                            font-size: 58px;
+                            line-height: 62px;
+                            margin-bottom: 20px;
+                        }
+                        p {
+                            font-size: 22px;
+                            line-height: 30px;
+                            margin-bottom: 20px;
+                        }
+                        a {
+                            font-size: 18px;
+                            line-height: 22px;
+                        }
+                    }
+                }
+                .stocks-text {
+                    .text {
+                        padding: 40px 40px 30px;
+                        p {
+                            font-size: 18px;
+                            line-height: 28px;
+                            padding-bottom: 30px;
+                        }
+                        a{
+                            font-size: 18px;
+                            line-height: 22px;
+                            padding: 14px 45px 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+
+    .stocks {
+        .stocks-content {
+            .stocks-item {
+                .stocks-img {
+                    padding: 70px 90px;
+                    img {
+                        left: 40px;
+                        width: 370px;
+                    }
+                    .img-text {
+                        h3 {
+                            font-size: 60px;
+                            line-height: 70px;
+                            margin-bottom: 20px;
+                        }
+                        p {
+                            font-size: 24px;
+                            line-height: 34px;
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: 1340px) {
+
+    .stocks {
+        padding: 25px 0 20px;
+        .title {
+            margin-bottom: 34px;
+            h2 {
+                font-size: 38px;
+                line-height: 40px;
+            }
+        }
+        .stocks-content {
+            margin: 0 20px;
+            .stocks-item {
+                margin-bottom: 60px;
+                .stocks-img {
+                    padding: 76px 105px;
+                    img {
+                        top: 53%;
+                        width: 479px;
+                    }
+                    .img-text {
+                        margin-left: 40%;
+                        a {
+                            font-size: 20px;
+                            line-height: 24px;
+                        }
+                    }
+                }
+                .stocks-text {
+                    .text {
+                        padding: 46px 103px 0;
+                        p {
+                            font-size: 20px;
+                            line-height: 30px;
+                            padding-bottom: 35px;
+                        }
+                        a {
+                            font-size: 20px;
+                            line-height: 22px;
+                            padding: 15px 65px 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

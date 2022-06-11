@@ -1,0 +1,371 @@
+footer{
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+    .footer{
+        position: relative;
+    }
+    .footer-after{
+        top: 0;
+        left: 0;
+        width: 100%;
+        position: absolute;
+    }
+    .footer-content{
+        padding: 20px 0;
+        text-align: center;
+        .logo{
+            margin-bottom: 20px;
+            a{
+                width: 108px;
+                margin-bottom: 10px;
+                display: inline-block;
+            }
+            p{
+                display: none;
+                font-size: 14px;
+                line-height: 20px;
+                color: var(--color-white);
+            }
+        }
+        .menu{
+            text-align: left;
+            margin-bottom: 20px;
+            ul{
+                margin-bottom: 10px;
+                li{
+                    margin-bottom: 10px;
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                    a{
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 20px;
+                        color: var(--color-white);
+                        transition: all 0.5s;
+                        &:hover{
+                            color: var(--color-main2);
+                        }
+                    }
+                }
+            }
+            .designed{
+                display: block;
+                color: #ffffff;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 16px;
+                color: var(--color-white);
+                transition: all 0.5s;
+                &:hover{
+                    color: var(--color-main2);
+                }
+            }
+            .privacy{
+                display: block;
+                color: #ffffff;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 16px;
+                color: var(--color-white);
+                text-decoration: underline;
+                transition: all 0.5s;
+                &:hover{
+                    color: var(--color-main2);
+                }
+            }
+        }
+        .addres-payment{
+            text-align: left;
+            margin-bottom: 20px;
+            p{
+                font-size: 16px;
+                line-height: 20px;
+                margin-bottom: 10px;
+                color: var(--color-white);
+            }
+            a{
+                display: block;
+                font-size: 16px;
+                line-height: 18px;
+                color: var(--color-white);
+            }
+            .tel{
+                margin-bottom: 15px;
+            }
+            ul{
+                text-align: center;
+                li{
+                    margin: 0 5px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    &:first-child{
+                        margin-left: 0;
+                    }
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                    a{
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+        .solial-attachment{
+            p{
+                font-size: 16px;
+                line-height: 22px;
+                margin-bottom: 10px;
+                color: var(--color-white);
+            }
+            .solial{
+                text-align: center;
+                margin-bottom: 10px;
+                li{
+                    margin: 0 5px;
+                    display: inline-block;
+                    &:first-child{
+                        margin-left: 0;
+                    }
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                    a{
+                        display: inline-block;
+                        &:hover{
+                            i{
+                                color: var(--color-main2);
+                            }
+                        }
+                        i{
+                            font-size: 29px;
+                            color: var(--color-white);
+                            transition: all 0.5s;
+                        }
+                    }
+                }
+            }
+            .attachment{
+                text-align: center;
+                margin-bottom: 20px;
+                li{
+                    margin: 0 10px;
+                    display: inline-block;
+                    &:first-child{
+                        margin-left: 0;
+                    }
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                    span{
+                        display: block;
+                        font-size: 16px;
+                        line-height: 22px;
+                        margin-bottom: 5px;
+                        color: var(--color-white);
+                    }
+                    a{
+                        width: 120px;
+                        display: inline-block;
+                        img{
+                            width: 100%;
+                            display: flex;
+                        }
+                    }
+                    .attachment-desc{
+                        display: none;
+                    }
+                    .attachment-mobile{
+                        border-radius: 5px;
+                        overflow: hidden;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    footer {
+        .footer-content{
+            display: flex;
+            text-align: left;
+            justify-content: space-between;
+            .logo-menu{
+                display: flex;
+                flex-wrap: wrap;
+                margin-right: 58px;
+                justify-content: space-between;
+            }
+            .addres-payment {
+                width: 40%;
+                margin-bottom: 0;
+            }
+            .solial-attachment {
+                .attachment {
+                    li {
+                        a {
+                            width: 69px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+  
+}
+  
+@media screen and (min-width: 1024px) {
+
+    footer {
+        .footer-content {
+            .logo-menu{
+                margin-right: 0;
+            }
+            .logo {
+                margin-bottom: 0;
+                margin-right: 30px;
+                a{
+                    margin-bottom: 30px;
+                }
+                p{
+                    display: block;
+                }
+            }
+            .menu {
+                margin-right: 30px;
+                ul {
+                    margin-bottom: 20px;
+                }
+                .designed {
+                    margin-bottom: 12px;
+                }
+            }
+            .addres-payment {
+                width: 183px;
+                p {
+                    margin-bottom: 14px;
+                }
+            }
+            .solial-attachment {
+                .solial {
+                    text-align: left;
+                    li{
+                        &:first-child {
+                            margin-left: 10px;
+                        }
+                    }
+                }
+                .attachment {
+                    text-align: left;
+                    margin-bottom: 0;
+                    li {
+                        a {
+                            width: 100px;
+                        }
+                    }
+                }
+                p{
+                    &:last-child{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+}
+  
+@media screen and (min-width: 1200px) {
+
+    footer {
+        .footer-content {
+            .solial-attachment {
+                .attachment {
+                    li {
+                        a {
+                            width: 69px;
+                        }
+                        .attachment-desc {
+                            display: block;
+                        }
+                        .attachment-mobile {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: 1340px) {
+  
+    footer{
+        .footer-content {
+            padding: 37px 0;
+            .logo {
+                margin-top: 4px;
+                margin-right: 50px;
+                a {
+                    margin-bottom: 53px;
+                }
+            }
+            .menu {
+                margin-right: 139px;
+                ul {
+                    margin-bottom: 38px;
+                    li {
+                        margin-bottom: 13px;
+                    }
+                }
+            }
+            .addres-payment {
+                p {
+                    margin-bottom: 18px;
+                }
+                a{
+                    margin-bottom: 18px;
+                }
+                ul {
+                    li {
+                        margin: 0 17px;
+                    }
+                }
+            }
+            
+
+            .solial-attachment{
+                width: 266px;
+                p {
+                    margin-bottom: 14px;
+                }
+                .solial {
+                    margin-bottom: 18px;
+                    li {
+                        margin: 0 11px;
+                        a {
+                            i {
+                                font-size: 38px;
+                            }
+                        }
+                    }
+                }
+                .attachment {
+                    li {
+                        margin: 0 28px;
+                        span {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+  
+}

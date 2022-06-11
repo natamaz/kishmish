@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Барабулька</title>
+    <meta name="cmsmagazine" content="5a7189a28fb3dc68238dbdb44c9ea99c" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/basket-page.css">
+</head>
+
+<body>
+
+    <div class="address-popup">
+        <span class="close"></span>
+        <div class="address-content">
+            <span class="close-popup"><i class="icon-error"></i></span>
+            <h4>Мой адрес</h4>
+            <form>
+                <div class="form-content">
+                    <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+                        <option>Город</option>
+                        <option>Москва</option>
+                        <option>Санкт-Петербург</option>
+                    </select>
+                    <input type="text" placeholder="Улица">
+                    <input type="text" placeholder="Номер дома">
+                    <input type="text" placeholder="Корпус">
+                    <input type="text" placeholder="Подъезд">
+                    <input type="text" placeholder="Домофон">
+                    <input type="text" placeholder="Этаж">
+                    <input type="text" placeholder="Квартира / офис">
+                </div>
+                <textarea placeholder="Примечание к адресу"></textarea>
+                <button>Выбрать адрес</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="valid-popup">
+        <span class="close"></span>
+        <div class="valid-content">
+            <span class="close-popup"><i class="icon-error"></i></span>
+            <h4>Ваш заказ успешно оформлен</h4>
+        </div>
+    </div>
+
+    <div class="confirmation-popup">
+        <span class="close"></span>
+        <div class="confirmation-content">
+            <span class="close-popup"><i class="icon-error"></i></span>
+            <h4>Подтверждение заказа</h4>
+            <p>Для подверждения заказа введите код из SMS, которое мы отправили на указанный Вами номер</p>
+            <form>
+                <div class="form-content">
+                    <input type="text" placeholder="Введите код">
+                    <a href="javascript:void(0)">выслать код повторно</a>
+                </div>
+                <button>Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <style>
+        :root {
+            --color-black: #000000;
+            --color-white: #ffffff;
+            --color-main1: #75a3dc;
+            --color-main2: #f9c651;
+            --color-main3: #ff8237;
+            --color-main4: #e0e0e0;
+            --color-main5: #b9b9b9;
+            --color-main6: #282828;
+            --color-main7: #e1e1e1;
+            --color-main8: #ecedef;
+            --color-main9: #403f3c;
+        }
+    </style>
+
+
+    <div class="mobile-menu">
+        <nav>
+            <ul>
+                <li class="active"><a href="index.html">Меню</a></li>
+                <li><a href="delivery.html">Доставка</a></li>
+                <li><a href="stocks.html">Акции</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="address_search-popup">
+        <span class="close"></span>
+        <div class="address-content">
+            <span class="close-popup"><i class="icon-error"></i></span>
+            <div class="top">
+                <p>В каком городе Вы находитесь?</p>
+                <div class="city">
+                    <p>Москва</p>
+                    <p>Санкт-Петербург</p>
+                </div>
+            </div>
+            <div class="form">
+                <div class="input_box">
+                    <input type="text" placeholder="Поиск...">
+                </div>
+                <div class="alphabet">
+                    <ul>
+                        <li>а</li>
+                        <li>б</li>
+                        <li>в</li>
+                        <li>г</li>
+                        <li>д</li>
+                        <li>е</li>
+                        <li>ж</li>
+                        <li>з</li>
+                        <li>и</li>
+                        <li class="active">к</li>
+                        <li>л</li>
+                        <li>м</li>
+                        <li>н</li>
+                        <li>о</li>
+                        <li>п</li>
+                        <li>р</li>
+                        <li>с</li>
+                        <li>т</li>
+                        <li>у</li>
+                        <li>ф</li>
+                        <li>х</li>
+                        <li>ц</li>
+                        <li>ч</li>
+                        <li>ш</li>
+                        <li>щ</li>
+                        <li>э</li>
+                        <li>ю</li>
+                        <li>я</li>
+                    </ul>
+                </div>
+                <div class="city_box">
+                    <div class="box">
+                        <div>
+                            <p>Казань</p>
+                        </div>
+                        <div>
+                            <p>Калачинск</p>
+                        </div>
+                        <div>
+                            <p>Калуга</p>
+                        </div>
+                        <div>
+                            <p>Каменск-Уральский</p>
+                        </div>
+                        <div>
+                            <p>Каменск-Шахтинский</p>
+                        </div>
+                        <div>
+                            <p>Камышин</p>
+                        </div>
+                        <div>
+                            <p>Канск</p>
+                        </div>
+                        <div>
+                            <p>Кемерово</p>
+                        </div>
+                        <div>
+                            <p>Кингисепп</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div>
+                            <p>Казань</p>
+                        </div>
+                        <div>
+                            <p>Калачинск</p>
+                        </div>
+                        <div>
+                            <p>Калуга</p>
+                        </div>
+                        <div>
+                            <p>Каменск-Уральский</p>
+                        </div>
+                        <div>
+                            <p>Каменск-Шахтинский</p>
+                        </div>
+                        <div>
+                            <p>Камышин</p>
+                        </div>
+                        <div>
+                            <p>Канск</p>
+                        </div>
+                        <div>
+                            <p>Кемерово</p>
+                        </div>
+                        <div>
+                            <p>Кингисепп</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div>
+                            <p>Казань</p>
+                        </div>
+                        <div>
+                            <p>Калачинск</p>
+                        </div>
+                        <div>
+                            <p>Калуга</p>
+                        </div>
+                        <div>
+                            <p>Каменск-Уральский</p>
+                        </div>
+                        <div>
+                            <p>Каменск-Шахтинский</p>
+                        </div>
+                        <div>
+                            <p>Камышин</p>
+                        </div>
+                        <div>
+                            <p>Канск</p>
+                        </div>
+                        <div>
+                            <p>Кемерово</p>
+                        </div>
+                        <div>
+                            <p>Кингисепп</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="valid2-popup">
+        <span class="close "></span>
+        <div class="valid2-content">
+            <span class="close-popup"><i class="icon-error"></i></span>
+            <h4>Ваш заказ успешно оформлен</h4>
+            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий
+            </p>
+        </div>
+    </div>
+    <div class="valid3-popup">
+        <span class="close"></span>
+        <div class="valid3-content">
+            <span class="close-popup"><i class="icon-error"></i></span>
+            <h4>Для оформления заказа, авторизуйтесь</h4>
+        </div>
+    </div>
+    <div class="valid4-popup">
+        <span class="close replace"></span>
+        <div class="valid4-content">
+            <span class="close-popup replace"><i class="icon-error"></i></span>
+            <section class="authorization2">
+                <div class="container">
+                    <div class="title">
+                        <h2>Личный кабинет</h2>
+                    </div>
+                    <div class="authorization-content2">
+                        <div id="authorization-tabs2" class="authorization-tabs2">
+                            <ul>
+                                <li><a href="#tab-3"> Авторизация </a></li>
+                                <li><a href="#tab-4"> Регистрация </a></li>
+                            </ul>
+
+                            <div id="tab-3">
+                                <form>
+                                    <div class="input">
+                                        <input class="phone" type="text" placeholder="Ваш номер телефона">
+                                        <input type="text" placeholder="Код из SMS">
+                                    </div>
+                                    <button type="button" class="sms_btn">Отправить смс</button>
+                                    <span>Отправить повторно <i>4:58</i></span>
+                                    <button>Войти</button>
+                                </form>
+                            </div>
+                            <div id="tab-4">
+                                <form>
+                                    <div class="input">
+                                        <input class="phone" type="text" placeholder="Ваш номер телефона">
+                                        <input type="text" placeholder="Ваш E-mail">
+                                        <input type="text" placeholder="Ваше Имя">
+                                        <input type="text" placeholder="Код из SMS">
+                                    </div>
+                                    <span>Отправить повторно <i>4:58</i></span>
+                                    <p>Регистрируясь Вы принимаете условия <a href="privacy-terms.html" target="_blank">полтики конфиденциальности</a></p>
+                                    <button>Зарегистрироваться</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="valid5-popup">
+        <span class="close"></span>
+        <div class="valid5-content">
+            <span class="close-popup"><i class="icon-error"></i></span>
+            <h4>Для оформления заказа, авторизуйтесь</h4>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-menu">
+                    <span class="open-menu">
+                   <span></span>
+                    </span>
+                    <a href="index.html" class="logo"><img src="../img/logo.png" alt=""></a>
+                    <nav>
+                        <ul>
+                            <li class="active"><a href="index.html">Меню</a></li>
+                            <li><a href="delivery.html">Доставка</a></li>
+                            <li><a href="stocks.html">Акции</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="user-tel">
+                    <div class="cont">
+                        <i class="icon-call-answer"></i>
+                        <a href="tel:8 800 000 00 00">8 800 000 00 00</a>
+                        <span class="search-popup">Санкт-Петербург</span>
+                    </div>
+                    <form>
+                        <div class="form">
+                            <input type="search">
+                            <button><i class="icon-magnifying-glass"></i></button>
+                        </div>
+                        <a class="form-open" href="javascript:void(0)"><i class="icon-magnifying-glass"></i></a>
+                    </form>
+                    <div class="basket">
+                        <a href="basket.html"><span>2</span><i class="icon-shopping-cart"></i></a>
+                        <p>Сумма: <strong>2 680 руб.</strong></p>
+                    </div>
+                    <a href="authorization.html" class="user"><i class="icon-user"></i><span>Войти</span></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="bread-crumbs">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><span>Корзина</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="basket-page">
+        <div class="container">
+            <div class="title">
+                <h2>Корзина</h2>
+            </div>
+            <div class="basket-content">
+                <div class="basket-title clearfix">
+                    <span>Товар</span>
+                    <span>Количество</span>
+                    <span>Сумма</span>
+                </div>
+                <div class="basket-items">
+                    <div class="basket-item">
+                        <div class="product">
+                            <div class="img" style="background: url('../img/product-img1.png') no-repeat 50% 50%; background-size: cover;"></div>
+                            <div class="text">
+                                <h3>Пицца Четыре сыра</h3>
+                                <p>Паста, моцарелла, сыр блю чиз, смесь сыров чеддер и пармезан, сливочный соус</p>
+                                <ul>
+                                    <li class="active">32 см</li>
+                                    <li>38 см</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="quantity">
+                            <input type="number" value="2">
+                        </div>
+                        <div class="sum">
+                            <strong>1 800 руб.</strong>
+                        </div>
+                        <span class="del"><i class="icon-error"></i></span>
+                    </div>
+                    <div class="basket-item">
+                        <div class="product">
+                            <div class="img" style="background: url('../img/product-img2.png') no-repeat 50% 50%; background-size: cover;"></div>
+                            <div class="text">
+                                <h3>Мороженное с топпингом</h3>
+                                <ul>
+                                    <li class="active">Шоколадный</li>
+                                    <li>Карамельный</li>
+                                    <li>Ягодный</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="quantity">
+                            <input type="number" value="2">
+                        </div>
+                        <div class="sum">
+                            <strong>140 руб.</strong>
+                        </div>
+                        <span class="del"><i class="icon-error"></i></span>
+                    </div>
+                    <div class="basket-item">
+                        <div class="product">
+                            <div class="img" style="background: url('../img/product-img3.png') no-repeat 50% 50%; background-size: cover;"></div>
+                            <div class="text">
+                                <h3>Количество персон</h3>
+                                <span>Исходя из количества персон, мы бесплатно укомплектуем Ваш заказ приборами и приправами </span>
+                            </div>
+                        </div>
+                        <div class="quantity">
+                            <input type="number" value="2">
+                        </div>
+                        <div class="sum">
+                            <strong>Бесплатно</strong>
+                        </div>
+                        <span class="del"><i class="icon-error"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="interested">
+        <div class="container">
+            <div class="title">
+                <h2>Вас может заинтересовать</h2>
+            </div>
+            <div class="products-content">
+                <div class="products-item">
+                    <div class="item">
+                        <div class="img" style="background: url('../img/products-item-img1.png') no-repeat 50% 50%; background-size: cover;">
+                            <a href="card-product.html"></a>
+                            <span class="new">new</span>
+                            <span class="like"><i class="icon-heart"></i></span>
+                        </div>
+                        <div class="text">
+                            <h4><a href="card-product.html">Мясное рагу</a></h4>
+                            <ul>
+                                <li>200 гр</li>
+                                <li>418 ккал</li>
+                            </ul>
+                            <p>Паста, моцарелла, сыр блю чиз, смесь сыров чеддер и пармезан, сливочный соус</p>
+                            <div class="sum">
+                                <strong>350 руб.</strong>
+                                <div class="quantity">
+                                    <input type="number" value="2">
+                                </div>
+                            </div>
+                            <a href="javascropt:void(0)"><span><i class="icon-shopping-cart"></i>Заказать</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="products-item">
+                    <div class="item">
+                        <div class="img" style="background: url('../img/products-item-img2.png') no-repeat 50% 50%; background-size: cover;">
+                            <a href="card-product.html"></a>
+                            <span class="new">new</span>
+                            <span class="like"><i class="icon-heart"></i></span>
+                        </div>
+                        <div class="text">
+                            <h4><a href="card-product.html">Морской окунь</a></h4>
+                            <ul>
+                                <li>200 гр</li>
+                                <li>418 ккал</li>
+                            </ul>
+                            <p>Паста, моцарелла, сыр блю чиз, смесь сыров чеддер и пармезан, сливочный соус</p>
+                            <div class="sum">
+                                <strong>350 руб.</strong>
+                                <div class="quantity">
+                                    <input type="number" value="2">
+                                </div>
+                            </div>
+                            <a href="javascropt:void(0)"><span><i class="icon-shopping-cart"></i>Заказать</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="products-item">
+                    <div class="item">
+                        <div class="img" style="background: url('../img/products-item-img3.png') no-repeat 50% 50%; background-size: cover;">
+                            <a href="card-product.html"></a>
+                            <span class="new">new</span>
+                            <span class="like active"><i class="icon-heart"></i></span>
+                        </div>
+                        <div class="text">
+                            <h4><a href="card-product.html">Жареное филе дорадо со сливочно-овощным пюре</a></h4>
+                            <ul>
+                                <li>200 гр</li>
+                                <li>418 ккал</li>
+                            </ul>
+                            <p>Паста, моцарелла, сыр блю чиз, смесь сыров чеддер и пармезан, сливочный соус</p>
+                            <div class="sum">
+                                <strong>350 руб.</strong>
+                                <div class="quantity">
+                                    <input type="number" value="2">
+                                </div>
+                            </div>
+                            <a href="javascropt:void(0)"><span><i class="icon-shopping-cart"></i>Заказать</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="products-item">
+                    <div class="item">
+                        <div class="img" style="background: url('../img/products-item-img4.png') no-repeat 50% 50%; background-size: cover;">
+                            <a href="card-product.html"></a>
+                            <span class="new">new</span>
+                            <span class="like"><i class="icon-heart"></i></span>
+                        </div>
+                        <div class="text">
+                            <h4><a href="card-product.html">Ужин мясника</a></h4>
+                            <ul>
+                                <li>200 гр</li>
+                                <li>418 ккал</li>
+                            </ul>
+                            <p>Паста, моцарелла, сыр блю чиз, смесь сыров чеддер и пармезан, сливочный соус</p>
+                            <div class="sum">
+                                <strong>350 руб.</strong>
+                                <div class="quantity">
+                                    <input type="number" value="2">
+                                </div>
+                            </div>
+                            <a href="javascropt:void(0)"><span><i class="icon-shopping-cart"></i>Заказать</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="total-content clearfix">
+                <input type="text" placeholder="Введите промокод">
+                <div class="total">
+                    <ul>
+                        <li>
+                            <p><span>1 940 руб.</span> Сумма заказа:<strong>1 640 руб.</strong></p>
+                        </li>
+                        <li>
+                            <p>Доставка:<strong>300 руб.</strong></p>
+                        </li>
+                        <li>
+                            <p>Итого:<strong>1 940 руб.</strong></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="checkout">
+        <div class="container">
+            <div class="title">
+                <h2>Оформление заказа</h2>
+            </div>
+            <div class="checkout-content">
+                <form>
+                    <div class="form-title">
+                        <h4>Личные данные</h4></div>
+                    <div class="form-item">
+                        <input type="text" placeholder="Имя">
+                        <input type="text" class="phone" placeholder="Телефон">
+                        <input type="text" placeholder="E-mail">
+                    </div>
+                    <div class="form-title">
+                        <h4>Выберите способ доставки</h4></div>
+                    <div class="form-item">
+                        <ul class="radio-link">
+                            <li>
+                                <label>
+                                    <input checked type="radio">Курьер</label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio">Самовывоз</label>
+                            </li>
+                        </ul>
+                        <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+                            <option>Выберите адрес ресторана для самовывоза</option>
+                            <option>Выберите адрес ресторана для самовывоза</option>
+                            <option>Выберите адрес ресторана для самовывоза</option>
+                        </select>
+                        <a href="javascript:void(0)" class="add-address">Добавить адрес</a>
+                        <textarea placeholder="Комментарий к заказу (если необходимо)"></textarea>
+                        <ul class="checkbox-link">
+                            <li>
+                                <label>
+                                    <input type="checkbox">Тихий курьер</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="form-title">
+                        <h4>Выберите время доставки</h4></div>
+                    <div class="form-item">
+                        <ul class="radio-link">
+                            <li>
+                                <label>
+                                    <input checked type="radio">Как можно скорее</label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio">К определенному времени</label>
+                            </li>
+                        </ul>
+                        <div class="select-left">
+                            <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+                                <option>Сегодня</option>
+                                <option>Сегодня</option>
+                                <option>Сегодня</option>
+                            </select>
+                            <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+                                <option>16:30</option>
+                                <option>16:30</option>
+                                <option>16:30</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-title">
+                        <h4>Выберите способ оплаты</h4></div>
+                    <div class="form-item">
+                        <ul class="radio-link">
+                            <li>
+                                <label>
+                                    <input checked type="radio">Картой на сайте</label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio">Наличными курьеру</label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio">Картой курьеру</label>
+                            </li>
+                        </ul>
+                        <p>Требуется сдача с
+                            <input type="text" placeholder="руб.">
+                        </p>
+                        <div class="sum">Сумма заказа: <strong>1 640 руб.</strong></div>
+                    </div>
+                    <ul class="form-link">
+                        <li><a href="index.html">Вернуться в меню</a></li>
+                        <li>
+                            <button class="no-active">Заказать</button><span>Заполните обязательные поля</span></li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer" style="background: url('../img/footer.jpg') 50% 50% no-repeat; background-size: cover;">
+            <img src="../img/footer-after.png" alt="" class="footer-after">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="logo-menu">
+                        <div class="logo">
+                            <a href="index.html"><img src="../img/logo-footer.png" alt=""></a>
+                            <p>© 2019 Ресторан «Барабулька»</p>
+                        </div>
+                        <div class="menu">
+                            <ul>
+                                <li><a href="letter-director.html">Письмо Директору</a></li>
+                                <li><a href="delivery.html">Доставка и оплата</a></li>
+                                <li><a href="news.html">Новости</a></li>
+                                <li><a href="contacts.html">Контакты</a></li>
+                            </ul>
+                            <a class="designed" href="javascript:void(0)">Разработано в студии “Touch”</a>
+                            <a class="privacy" href="privacy-terms.html">Условия конфиденциальности</a>
+                        </div>
+                        <div class="addres-payment">
+                            <p>Юридический адрес:</p>
+                            <a href="javascript:void(0)" class="addres">Москва, ул. Добролюбова, д. 129, оф 15</a>
+                            <a class="tel" href="tel:8 000 000 00 00">тел: 8 000 000 00 00</a>
+                            <p>Принимаем к оплате</p>
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="../img/payment-img1.png" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="../img/payment-img2.png" alt=""></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="solial-attachment">
+                        <p>Присоединяйся к нам в соц сетях </p>
+                        <ul class="solial">
+                            <li><a href="javascript:void(0)"><i class="icon-instagram"></i></a></li>
+                            <li><a href="javascript:void(0)"><i class="icon-facebook"></i></a></li>
+                            <li><a href="javascript:void(0)"><i class="icon-telegram"></i></a></li>
+                        </ul>
+                        <ul class="attachment">
+                            <li>
+                                <span>для IOS</span>
+                                <a class="attachment-desc" href="javascript:void(0)"><img src="../img/attachment1.png" alt=""></a>
+                                <a class="attachment-mobile" href="javascript:void(0)"><img src="../img/store-icon.png" alt=""></a class="attachment-desc">
+                            </li>
+                            <li>
+                                <span>для Android</span>
+                                <a class="attachment-desc" href="javascript:void(0)"><img src="../img/attachment1.png" alt=""></a class="attachment-desc">
+                                <a class="attachment-mobile" href="javascript:void(0)"><img src="../img/google-icon.png" alt=""></a class="attachment-desc">
+                            </li>
+                        </ul>
+                        <p>© 2019 Ресторан «Барабулька»</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery.mask.min.js"></script>
+    <script src="../js/jquery.matchHeight.min.js"></script>
+    <script src="../js/jcf.min.js"></script>
+    <script src="../js/jcf.checkbox.min.js"></script>
+    <script src="../js/jcf.radio.min.js"></script>
+    <script src="../js/jcf.number.min.js"></script>
+    <script src="../js/jcf.select.min.js"></script>
+    <script src="../js/script.min.js"></script>
+    <script src="../js/jquery.responsiveTabs.min.js"></script>
+    <script src="../js/basket-page.min.js"></script>
+</body>
+
+</html>

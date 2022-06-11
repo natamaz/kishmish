@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Инжыр</title>
+    <meta name="cmsmagazine" content="5a7189a28fb3dc68238dbdb44c9ea99c" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/authorization.css">
+</head>
+<body>
+
+<!-- build:section layout.settings-->
+<!-- /build -->
+
+<!-- build:section layout.header-->
+<!-- /build -->
+
+<div class="bread-crumbs">
+    <div class="container">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><span>Личный кабинет</span></a></li>
+        </ul>
+    </div>
+</div>
+
+<section class="authorization">
+    <div class="container">
+        <div class="title">
+            <h2>Личный кабинет</h2>
+        </div>
+        <div class="authorization-content">
+            <div id="authorization-tabs" class="authorization-tabs">
+                <ul>
+                    <li><a href="#tab-1"> Авторизация </a></li>
+                    <li><a href="#tab-2"> Регистрация </a></li>
+                </ul>
+                <div id="tab-1">
+                    <form>
+                        <div class="input">
+                            <input class="phone" type="text" placeholder="Ваш номер телефона"> <!-- при некоректном вводе должен быть класс error -->
+                            <input type="text" placeholder="Код из SMS">
+                        </div>
+                        <button type="button" class="sms_btn">Отправить смс</button>
+                        <span>Отправить повторно <i>4:58</i></span>
+                        <button>Войти</button>
+                    </form>
+                </div>
+                <div id="tab-2">
+                    <form>
+                        <div class="input">
+                            <input class="phone" type="text" placeholder="Ваш номер телефона">
+                            <input type="text" placeholder="Ваш E-mail">
+                            <input type="text" placeholder="Ваше Имя">
+                            <input type="text" placeholder="Код из SMS">
+                        </div>
+
+                        <span>Отправить повторно <i>4:58</i></span>
+                        <p>Регистрируясь Вы принимаете условия <a href="privacy-terms.html" target="_blank">полтики конфиденциальности</a></p>
+                        <button>Зарегистрироваться</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- build:section layout.footer-->
+<!-- /build -->
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/jquery.mask.min.js"></script>
+<script src="../js/jquery.matchHeight.min.js"></script>
+<script src="../js/jquery.responsiveTabs.min.js"></script>
+<script src="../js/script.min.js"></script>
+<script src="../js/authorization.min.js"></script>
+</body>
+</html>
+

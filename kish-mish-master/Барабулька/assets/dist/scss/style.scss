@@ -1,0 +1,148 @@
+@import "libs/fontello";
+@import "libs/fonts";
+@import "libs/header";
+@import "libs/footer";
+@import "libs/responsive-tabs";
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: none;
+  text-decoration: none;
+  font-family: 'Conv_PFDinTextPro-Light';
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body{
+  min-height: 100vh;
+  position: relative;
+}
+
+ul,ol{
+  margin: 0;
+}
+
+input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+ul li,ol li{
+  margin: 0;
+}
+
+.clearfix{
+  &:after {
+    content: " ";
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    clear: both;
+    height: 0;
+  }
+}
+
+.container{
+  z-index: 4;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  position: relative;
+}
+
+.bread-crumbs{
+  padding: 20px 0 20px;
+  ul{
+    li{
+      margin-right: 4px;
+      margin-bottom: 5px;
+      position: relative;
+      padding-right: 10px;
+      display: inline-block;
+      &:last-child{
+        margin-right: 0;
+        padding-right: 0;
+        &::after{
+          display: none;
+        }
+      }
+      &::after{
+        content: '/';
+        top: 48%;
+        right: -3px;
+        font-size: 17px;
+        line-height: 17px;
+        position: absolute;
+        color: var(--color-main5);
+        font-family: 'Conv_PFDinTextPro-Thin';
+        transform: translate(0, -50%);
+      }
+      a{
+        color: #b9b9b9;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 17px;
+        display: inline-block;
+        color: var(--color-main5);
+        transition: all 0.5s;
+        &:hover{
+          color: var(--color-main1);
+        }
+      }
+      span{
+        display: inline-block;
+        color: var(--color-main1);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  .bread-crumbs{
+    padding: 26px 0 20px;
+    ul{
+      padding: 0 18px;
+    }
+  }
+
+  .container{
+    padding: 0 60px;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+  .container{
+    padding: 0 80px;
+  }
+
+}
+
+@media screen and (min-width: 1340px) {
+
+  .container{
+    padding: 0;
+    width: 1280px;
+  }
+
+}

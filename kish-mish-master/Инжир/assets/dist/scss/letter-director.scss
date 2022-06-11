@@ -1,0 +1,223 @@
+@import "libs/slick";
+
+header{
+
+    background-color: #35264e;
+}
+
+.letter-director{
+    padding: 10px 0 50px;
+    .title{
+        text-align: center;
+        margin-bottom: 20px;
+        h2{
+            font-size: 30px;
+            color: #282828;
+            font-weight: 400;
+            line-height: 34px;
+            font-family: 'Conv_MARTA_ITALIC';
+        }
+    }
+    .letter-director-text{
+        margin-bottom: 20px;
+        img{
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .text{
+            margin-bottom: 10px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            p{
+                font-size: 14px;
+                line-height: 22px;
+                color: #282828;
+                font-family: 'Conv_HelveticaNeueCyr-Roman';
+            }
+        }
+    }
+    .letter-director-form{
+        form{
+            .input{
+                margin-bottom: 15px;
+            }
+            input{
+                width: 100%;
+                height: 45px;
+                color: #282828;
+                font-size: 14px;
+                line-height: 18px;
+                border-radius: 5px;
+                padding: 10px 15px;
+                margin-bottom: 10px;
+                border: 1px solid #a1a1a1;
+                background-color: #ffffff;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+            input::-webkit-input-placeholder {color: #999999;}
+            input::-moz-placeholder          {color: #999999;}
+            input:-moz-placeholder           {color: #999999;}
+            input:-ms-input-placeholder      {color: #999999;}
+            textarea{
+                width: 100%;
+                resize: none;
+                height: 152px;
+                font-size: 14px;
+                color: #282828;
+                line-height: 18px;
+                border-radius: 5px;
+                padding: 10px 15px;
+                border: 1px solid #a1a1a1;
+                background-color: #ffffff;
+            }
+            textarea::-webkit-input-placeholder {color: #999999;}
+            textarea::-moz-placeholder          {color: #999999;}
+            textarea:-moz-placeholder           {color: #999999;}
+            textarea:-ms-input-placeholder      {color: #999999;}
+            button{
+                width: 186px;
+                height: 44px;
+                border: none;
+                display: block;
+                cursor: pointer;
+                font-size: 16px;
+                color: #ffffff;
+                line-height: 22px;
+                text-align: center;
+                border-radius: 3px;
+                margin: 20px auto 0;
+                background-image: linear-gradient(to left, #604c7c 0%, #302148 100%);
+                transition: all 0.5s;
+                &:hover{
+                    background-image: linear-gradient(to left, #d0b606 0%, #d0b606 100%);
+                }
+            }
+            .error{
+                color: var(--color-main2);
+                border: 1px solid var(--color-main2);
+            }
+            .error::-webkit-input-placeholder {color: var(--color-main3);}
+            .error::-moz-placeholder          {color: var(--color-main3);}
+            .error:-moz-placeholder           {color: var(--color-main3);}
+            .error:-ms-input-placeholder      {color: var(--color-main3);}
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .letter-director {
+        .letter-director-text {
+            margin-bottom: 30px;
+            .text{
+                padding-left: 15px;
+            }
+            img {
+                width: 39%;
+                float: left;
+                margin: 0 20px 20px 0;
+            }
+        }
+        .letter-director-form{
+            margin: 0 40px;
+        }
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .letter-director {
+        .letter-director-text {
+            img {
+                width: 37%;
+            }
+            .text {
+                p {
+                    font-size: 16px;
+                    line-height: 26px;
+                }
+            }
+        }
+        .letter-director-form{
+            form{
+                .input{
+                    display: flex;
+                    justify-content: space-between;
+                    input{
+                        width: 32%;
+                        height: 50px;
+                        font-size: 16px;
+                        margin-bottom: 0;
+                        line-height: 20px;
+                    }
+                }
+                textarea{
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: 1340px) {
+
+    .letter-director {
+        padding: 25px 0 55px;
+        .title {
+            margin-bottom: 55px;
+            h2 {
+                font-size: 38px;
+                line-height: 40px;
+            }
+        }
+        .letter-director-text {
+            margin-bottom: 55px;
+            img {
+                width: 32.8%;
+                margin: 3px 20px 6px 0;
+            }
+            .text {
+                padding: 0 15px;
+                margin-bottom: 24px;
+                p {
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+            }
+        }
+        .letter-director-form {
+            margin: 0 20px;
+            form {
+                .input {
+                    margin-bottom: 23px;
+                    input {
+                        width: 32.2%;
+                        height: 55px;
+                        font-size: 18px;
+                        padding: 0 34px;
+                        line-height: 20px;
+                    }
+                }
+                textarea {
+                    height: 216px;
+                    font-size: 18px;
+                    line-height: 20px;
+                    padding: 16px 37px;
+                }
+                button {
+                    width: 206px;
+                    height: 53px;
+                    font-size: 20px;
+                    margin: 43px auto 0;
+                }
+            }
+        }
+    }
+
+}

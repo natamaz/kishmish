@@ -1,0 +1,147 @@
+@import "libs/slick";
+
+header{
+    background-color: #35264e;
+}
+
+.privacy-terms{
+    padding: 10px 0 50px;
+    .title{
+        text-align: center;
+        margin-bottom: 20px;
+        h2{
+            font-size: 30px;
+            color: #282828;
+            font-weight: 400;
+            line-height: 34px;
+            font-family: 'Conv_MARTA_ITALIC';
+        }
+    }
+    .privacy-terms-content{
+        .privacy-terms-item{
+            margin-bottom: 30px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+        h4{
+            font-size: 18px;
+            line-height: 30px;
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #282828;
+            font-family: 'Conv_HelveticaNeueCyr-Roman';
+        }
+        ul{
+            li{
+                font-size: 14px;
+                line-height: 22px;
+                position: relative;
+                padding-left: 22px;
+                color: #282828;
+                ul{
+                    li{
+                        padding-left: 31px;
+                    }
+                }
+                span{
+                    top: 0;
+                    left: 0;
+                    font-size: 14px;
+                    line-height: 22px;
+                    position: absolute;
+                    color: #282828;
+                }
+                strong{
+                    font-size: 14px;
+                    color: #282828;
+                    font-weight: 400;
+                    line-height: 22px;
+                    font-family: 'Conv_HelveticaNeueCyr-Roman';
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .privacy-terms {
+        padding: 10px 0 75px;
+        .privacy-terms-content {
+            h4 {
+                font-size: 22px;
+                line-height: 30px;
+            }
+            ul {
+                li {
+                    font-size: 16px;
+                    line-height: 24px;
+                    padding-left: 24px;
+                    ul {
+                        li {
+                            padding-left: 35px;
+                        }
+                    }
+                    span{
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+                    strong{
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }   
+    }
+
+}
+
+@media screen and (min-width: 1340px) {
+
+    .privacy-terms {
+        padding: 25px 0 92px;
+        .title {
+            margin-bottom: 55px;
+            h2 {
+                font-size: 38px;
+                line-height: 40px;
+            }
+        }
+        .privacy-terms-content {
+            .privacy-terms-item{
+                margin-bottom: 42px;
+            }
+            h4 {
+                font-size: 28px;
+                line-height: 30px;
+                margin-bottom: 29px;
+            }
+            ul {
+                li {
+                    font-size: 18px;
+                    line-height: 27px;
+                    padding-left: 33px;
+                    padding-right: 140px;
+                    ul{
+                        li{
+                            padding-left: 52px;
+                            margin: 4px 0 0 5px;
+                        }
+                    }
+                    span{
+                        font-size: 20px;
+                        line-height: 27px;
+                    }
+                    strong{
+                        font-size: 20px;
+                        line-height: 27px;
+                    }
+                }
+            }
+        }
+    }
+
+}

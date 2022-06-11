@@ -1,0 +1,406 @@
+footer{
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+    .footer{
+        position: relative;
+    }
+    .footer-after{
+        top: 0;
+        left: 0;
+        width: 100%;
+        position: absolute;
+    }
+    .footer-content{
+        padding: 20px 0;
+        text-align: center;
+        .logo{
+            margin-bottom: 20px;
+            a{
+                width: 108px;
+                margin-bottom: 10px;
+                display: inline-block;
+            }
+            p{
+                display: none;
+                font-size: 14px;
+                color: #ffffff;
+                line-height: 20px;
+                font-family: 'Conv_HelveticaNeueCyr-Roman';
+            }
+        }
+        .menu{
+            text-align: left;
+            margin-bottom: 20px;
+            ul{
+                margin-bottom: 10px;
+                li{
+                    margin-bottom: 10px;
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                    a{
+                        font-size: 16px;
+                        color: #ffffff;
+                        font-weight: 400;
+                        line-height: 20px;
+                        transition: all 0.5s;
+                        font-family: 'Conv_HelveticaNeueCyr-Roman';
+                        &:hover{
+                            color: #d0b606;
+                        }
+                    }
+                }
+            }
+            .designed{
+                display: block;
+                color: #ffffff;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 16px;
+                color: #ffffff;
+                transition: all 0.5s;
+                font-family: 'Conv_HelveticaNeueCyr-Roman';
+                &:hover{
+                    color: #d0b606;
+                }
+            }
+            .privacy{
+                display: block;
+                color: #ffffff;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 16px;
+                text-decoration: underline;
+                transition: all 0.5s;
+                font-family: 'Conv_HelveticaNeueCyr-Roman';
+                &:hover{
+                    color: #d0b606;
+                }
+            }
+        }
+        .addres-payment{
+            text-align: left;
+            margin-bottom: 20px;
+            p{
+                font-size: 16px;
+                line-height: 20px;
+                margin-bottom: 10px;
+                color: #ffffff;
+                font-family: 'Conv_HelveticaNeueCyr-Bold';
+            }
+            a{
+                display: block;
+                font-size: 16px;
+                line-height: 18px;
+                color: #ffffff;
+                padding-left: 20px;
+                position: relative;
+                margin-bottom: 5px;
+                i{
+                    top: 0;
+                    left: 0;
+                    color: #d0b606;
+                    font-size: 13px;
+                    position: absolute;
+                }
+            }
+            .tel{
+                margin-bottom: 15px;
+            }
+            ul{
+                text-align: center;
+                li{
+                    margin: 0 10px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    &:first-child{
+                        margin-left: 0;
+                    }
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                    a{
+                        padding: 0;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+        .solial-attachment{
+            p{
+                font-size: 16px;
+                line-height: 22px;
+                margin-bottom: 10px;
+                color: #ffffff;
+                font-family: 'Conv_HelveticaNeueCyr-Bold';
+            }
+            .solial{
+                text-align: center;
+                margin-bottom: 10px;
+                li{
+                    margin: 0 5px;
+                    display: inline-block;
+                    &:first-child{
+                        margin-left: 0;
+                    }
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                    a{
+                        display: inline-block;
+                        &:hover{
+                            i{
+                                color: #d0b606;
+                            }
+                        }
+                        i{
+                            font-size: 29px;
+                            color: #ffffff;
+                            transition: all 0.5s;
+                        }
+                    }
+                }
+            }
+            .attachment{
+                text-align: center;
+                margin-bottom: 20px;
+                li{
+                    margin: 0 10px;
+                    display: inline-block;
+                    &:first-child{
+                        margin-left: 0;
+                    }
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                    span{
+                        display: block;
+                        font-size: 16px;
+                        line-height: 22px;
+                        margin-bottom: 5px;
+                        color: var(--color-white);
+                    }
+                    a{
+                        width: 120px;
+                        display: inline-block;
+                        img{
+                            width: 100%;
+                            display: flex;
+                        }
+                    }
+                    .attachment-desc{
+                        display: none;
+                    }
+                    .attachment-mobile{
+                        overflow: hidden;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    footer {
+        .footer-content{
+            display: flex;
+            text-align: left;
+            justify-content: space-between;
+            .logo-menu{
+                display: flex;
+                flex-wrap: wrap;
+                margin-right: 58px;
+                justify-content: space-between;
+            }
+            .addres-payment {
+                width: 50%;
+                margin-bottom: 0;
+                ul{
+                    text-align: left;
+                }
+            }
+            .solial-attachment {
+                .attachment {
+                    li {
+                        a {
+                            width: 69px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+  
+}
+  
+@media screen and (min-width: 1024px) {
+
+    footer {
+        .footer-content {
+            padding: 30px 0 30px;
+            .logo-menu{
+                margin-right: 0;
+                justify-content: initial;
+            }
+            .logo {
+                width: 20%;
+                margin-bottom: 0;
+                margin-right: 30px;
+                a{
+                    margin-bottom: 30px;
+                }
+                p{
+                    display: block;
+                }
+            }
+            .menu {
+                width: 34%;
+                margin-bottom: 0;
+                margin-right: 25px;
+                ul {
+                    margin-bottom: 20px;
+                }
+                .designed {
+                    margin-bottom: 12px;
+                }
+            }
+            .addres-payment {
+                width: 183px;
+                p {
+                    margin-bottom: 14px;
+                }
+            }
+            .solial-attachment {
+                .solial {
+                    text-align: left;
+                    li{
+                        &:first-child {
+                            margin-left: 10px;
+                        }
+                    }
+                }
+                .attachment {
+                    text-align: left;
+                    margin-bottom: 0;
+                    li {
+                        a {
+                            width: 100px;
+                        }
+                    }
+                }
+                p{
+                    &:last-child{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+}
+  
+@media screen and (min-width: 1200px) {
+
+    footer {
+        .footer-content {
+            .logo-menu {
+                width: 70%;
+            }
+            .logo {
+                width: 30%;
+            }
+            .solial-attachment {
+                .solial {
+                    text-align: center;
+                }
+                .attachment {
+                    text-align: center;
+                    li {
+                        a {
+                            width: 69px;
+                        }
+                        .attachment-desc {
+                            display: block;
+                        }
+                        .attachment-mobile {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: 1340px) {
+  
+    footer{
+        .footer-content {
+            padding: 33px 0;
+            .logo {
+                width: 24%;
+                margin-top: 4px;
+                margin-right: 15px;
+                a {
+                    margin-bottom: 53px;
+                }
+            }
+            .menu {
+                width: 30%;
+                margin-right: 45px;
+                ul {
+                    margin-bottom: 38px;
+                    li {
+                        margin-bottom: 13px;
+                    }
+                }
+            }
+            .addres-payment {
+                width: 230px;
+                p {
+                    margin-bottom: 18px;
+                }
+                a{
+                    margin-bottom: 18px;
+                }
+                ul {
+                    li {
+                        margin: 0 17px;
+                    }
+                }
+            }
+            .solial-attachment{
+                width: 314px;
+                p {
+                    margin-bottom: 14px;
+                }
+                .solial {
+                    margin-bottom: 18px;
+                    li {
+                        margin: 0 11px;
+                        a {
+                            i {
+                                font-size: 38px;
+                            }
+                        }
+                    }
+                }
+                .attachment {
+                    li {
+                        margin: 0 28px;
+                        span {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+  
+}
